@@ -1,0 +1,50 @@
+.header {
+    position: relative; /* Für das Pseudoelement erforderlich */
+    display: grid;
+    background-image: url('../img/Beruehrung_der_Schoepfung.png'); /* Hier das Bild einfügen */
+    place-items: center; /* Zentriert den Inhalt */
+    background-size: cover;
+    background-position: center;
+    width: 100%; /* Volle Breite */
+    height: 100vh; /* Dynamische Höhe: 100% der Viewport-Höhe */
+    color: white;
+    z-index: 1; /* Inhalte überlagern das Pseudoelement */
+}
+
+.header::after {
+    content: ''; /* Pseudoelement benötigt Inhalt */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4); /* Schwarzes Overlay mit 40% Transparenz */
+    z-index: -1; /* Unter den eigentlichen Header-Inhalt legen */
+}
+
+.lead {
+    font-size: 2em;
+}
+
+.bg-overlay {
+    background-color: rgba(255, 255, 255, 0.7); /* Weiß, 70% transparent */
+    border-radius: 8px; /* Optional: abgerundete Ecken */
+    display: inline-block; /* Hintergrund passt sich dem Inhalt an */
+    padding: 16px; /* Platz um den Text */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Optional: Schatten für besseren Kontrast */
+}
+
+#page h1{
+font-size: 2em;
+}
+
+#page h2{
+font-size: 1.4em;
+}
+#page h3{
+font-size: 1.1em;
+}
+
+h3{
+font-size: 1.4em;
+}

@@ -1,0 +1,4 @@
+RewriteEngine On
+RewriteCond %{HTTPS} off [OR]
+RewriteCond %{HTTP_HOST} ^inklusives-wohnen-dorsten\.de [NC]
+RewriteRule ^(.*)$ https://www.inklusives-wohnen-dorsten.de/$1 [R=301,L]
