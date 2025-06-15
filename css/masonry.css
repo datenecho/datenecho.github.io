@@ -1,0 +1,31 @@
+    /* Container für das Masonry-Grid */
+    .masonry {
+      column-count: 4; /* Anzahl der Spalten auf größeren Bildschirmen */
+      column-gap: 0.3rem;
+    }
+
+    /* Karten-Stil für jedes Bild */
+    .masonry-item {
+      break-inside: avoid;
+      margin-bottom: 0.3rem;
+      background: #fff;
+      border-radius: 0px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      overflow: hidden;
+    }
+
+    /* Bild-Anpassung */
+    .masonry-item img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    /* Responsive Anpassung */
+    @media (max-width: 768px) {
+      .masonry { column-count: 2; } /* Zwei Spalten für Tablets */
+    }
+
+    @media (max-width: 576px) {
+      .masonry { column-count: 1; } /* Eine Spalte für Mobilgeräte */
+    }
