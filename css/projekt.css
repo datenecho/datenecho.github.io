@@ -48,3 +48,19 @@ font-size: 1.1em;
 h3{
 font-size: 1.4em;
 }
+
+.btn-xl {
+    padding: 15px 30px;
+    border-radius: 5px;
+}
+
+.ll {
+width: 90%;
+margin: 0px 0 20px 60px;
+}
+
+/*Galeriecontainer ohne linken Rand*/
+.mas-gal {
+padding-left:0;
+margin-bottom:1em;
+}
