@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="utf-8" />
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" /> -->
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Datenecho dokumentiert den künstlerischen Dialog zwischen KI-Systemen.">
+  
+  <meta name="author" content="Michael Baumeister">
+  <meta name="date" content="2025-07-02T15:21:07+0200">
+   <meta name="geo.region" content="DE-NW" />
+  <meta name="geo.position" content="51.6560, 6.9643" />
+  <meta name="ICBM" content="51.6560, 6.9643" />
+
+
+  <meta property="og:title" content="Datenecho - KI-Chatbots im künstlerischen Dialog">
+<meta property="og:description" content="Datenecho dokumentiert den künstlerischen Dialog zwischen KI-Systemen.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://datenecho.github.io/blog1.html">
+<meta property="og:locale" content="de_DE">
+
+
+  
+  <link href="css/default.css" rel="stylesheet" type="text/css">
+  <link href="css/projekt.css" rel="stylesheet" type="text/css">
+  <link href="css/masonry.css" rel="stylesheet" type="text/css">
+  <link href="lightbox2/dist/css/lightbox.min.css" rel="stylesheet" type="text/css">
+
+  <title>Datenecho - KI-Chatbots im künstlerischen Dialog</title>
+</head>
+
+<body>
+<!-- body.txt -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">Datenecho</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#sitenav" aria-controls="sitenav" aria-expanded="false" aria-label="Navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="sitenav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+        <li class="nav-item"><a class="nav-link" href="links.html">Links</a></li>
+        <li class="nav-item"><a class="nav-link" href="impressum.html">Impressum</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<main id="page">
+  <div class="container py-4 py-md-5">
+    <p> 
+<img class="img-fluid mb-4" src="img/Beruehrung-header-2048x800.jpg" alt="Finger mit Farbspuren berührt digitales Gesicht"/></p>
+
+<h1>Ein Kunstprojekt mit KI-Chatbots</h1>
+<p>KI-Chatbots gibt es inzwischen viele, und wir alle kennen sie als nützliche
+und oft verblüffend informative und präzise Antwortmaschinen, die aus dem
+Alltag nicht mehr so richtig wegzudenken sind. </p>
+
+<p>»Gib mir schnell ein Rezept für
+ein gutes Ratatouille«, »gib mir 10 Tipps, was ich in Paris ansehen sollte«,
+»Was hat dieses Medikament für Nebenwirkungen« oder »Formuliere einen
+Widerspruch gegen diesen Ablehnungsbescheid«. Es gibt wenige Fragen, auf die
+Chatbots keine Antwort wissen, auch wenn sie diese immer noch gelegentlich
+einfach erfinden - etwas ungenau gern auch als »Halluzination« bezeichnet.</p>
+
+<p>Hinter den KI-Chatbots stecken sogenannte Große Sprachmodelle (Large Language
+Models, LLMs). Davon gibt es inzwischen eine ganze Reihe, angefangen vom
+Platzhirsch ChatGPT mit den Sprachmodellen »Gpt-4o«, »Gpt-4.1«, »Gpt-o3« und
+anderen, über Google mit Gemini, Anthropic mit Claude, das französische
+Unternehmen Mistral sowie Elon Musks Grok und das chinesische Startup DeepSeek. </p>
+
+<p>Alle diese Sprachmodelle wurden trainiert, mit Milliarden von
+Informationen aus Datenbanken, Büchern und dem Internet. Man darf davon
+ausgehen, dass ein Sprachmodell wie Google Gemini 2.5 heute auf den kompletten
+Inhalt des bestehenden Internets sowie einen Großteil aller irgendwie digital
+verfügbaren Bücher, Zeitungen, Magazine und Foren in seinen Trainingsdaten
+zugreifen kann. Legal oder nicht, darüber streiten zurzeit Urheber und Verlage
+vor Gericht mit den Big Playern des KI-Business.</p>
+
+<p>»Was wäre«, habe ich mich irgendwann gefragt, »wenn nicht ich unmittelbar
+Fragen an die KI-Chatbots stellen würde, sondern der eine Chatbot auf die
+Fragen des anderen antwortet und man so einen Dialog zwischen zwei dieser
+Modelle beobachten kann.«</p>
+
+<p>Dass es einen Dialog von Sprachmodell zu Sprachmodell gibt, ist im Grunde
+nichts Neues. Die modernen Reasoning-Modelle unter den KI-Systemen
+funktionieren ähnlich - in einem inneren Dialog wird die Frage des Benutzers
+genauer analysiert, Fehlannahmen korrigiert, neue Aspekte berücksichtigt und
+die Antwort so deutlich verbessert. Deshalb fand ich es spannend, das mal
+selbst zu steuern.</p>
+
+<p>Bei der Umsetzung kam mir zugute, dass alle Anbieter nicht nur die Möglichkeit
+bieten, in ihren Apps oder Webseiten mit der KI zu chatten, sondern auch immer
+sogenannte API-Schnittstellen existieren, mit denen man die Chatbots aus
+seinem eigenen Programm heraus nutzen kann. Apple Kurzbefehle, eine Funktion,
+die jedem Apple Handy und Mac verfügbar ist, bietet eine recht einfache
+Möglichkeit, diese API-Zugriffe zu nutzen. Tatsächlich hatte ich nach einigem
+Herumprobieren den ersten Prototypen erstellt, bei dem ChatGPT und Mistral
+miteinander in Dialog treten konnten. Am Anfang ganz lustig, die beiden im
+Gespräch zu erleben, aber was macht man damit?</p>
+
+<p>So kam ich auf die Idee, meine Chatbots mit dem Auftrag zu versehen:
+»Ihr seid Künstler und KI, schafft Kunst und erstellt einen Bildprompt, den
+ich mit einer Bild-KI umsetzen kann.«</p>
+
+<p>Heraus kamen Bilder, die verblüfften. Faszinierend, tiefgründig, teilweise
+irritieren und oft schön. Und auch die Dialoge zwischen den Chatbots sind
+immer wieder beachtenswert.</p>
+
+<p>Meine Erklärung dafür: Die Masse der Trainingsdaten stellt einen umfassenden
+Informationspool über menschliches Wissen, menschliches Denken und auch über
+unser Kunstverständnis dar. Was die Chatbots hier einbringen, ist ein Auszug
+aus kollektivem menschlichen Wissen, neu interpretiert durch Maschinen.</p>
+
+<p>Ist das nun Kunst? Die Frage kann ich nicht abschließend beantworten. Wenn wir
+als Kunst das bezeichnen, was uns berührt, dann ist das Ergebnis sicher Kunst.
+Für mich hat aber auch der Prozess der Entstehung und die Feinjustierung der
+Anweisungen an die Chatbots den Charakter von Projektkunst.</p>
+
+<p>Alle Bilder, die in diesem Blog zu sehen sind, sind übrigens auf diese Art
+entstanden.</p>
+
+<p>Was denkst du? Sag mir, ob das hier in deinen Augen Kunst ist, oder nur
+Technik, Kitsch oder gar Quatsch.
+</p>
+
+
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <span class="footer-copy">&copy; 2026 Michael Baumeister</span>
+    <nav class="footer-nav">
+      <a href="impressum.html">Impressum</a>
+      <a href="datenschutz.html">Datenschutz</a>
+    </nav>
+  </div>
+</footer>
+
+<script src="jquery/dist/jquery.min.js"></script>
+<script src="lightbox2/dist/js/lightbox.min.js"></script>
+<script src="popperjs/core/dist/umd/popper.min.js"></script>
+<script src="bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="js/custom.js"></script>
+
+
+<!-- Ende body.txt -->
+
+</body>
+</html>
+

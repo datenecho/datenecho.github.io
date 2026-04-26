@@ -1,7 +1,7 @@
 .header {
     position: relative; /* Für das Pseudoelement erforderlich */
     display: grid;
-    background-image: url('../img/Beruehrung_der_Schoepfung.png'); /* Hier das Bild einfügen */
+    background-image: url('../img/Beruehrung_der_Schoepfung2048.jpg'); /* Hier das Bild einfügen */
     place-items: center; /* Zentriert den Inhalt */
     background-size: cover;
     background-position: center;
@@ -36,15 +36,39 @@
 
 #page h1{
 font-size: 2em;
+margin-bottom: 1em;
 }
 
 #page h2{
 font-size: 1.4em;
+margin-bottom: 1em;
 }
 #page h3{
 font-size: 1.1em;
+margin-bottom: 1em;
 }
 
 h3{
 font-size: 1.4em;
+margin-bottom: 1em;
+}
+
+.btn-xl {
+    padding: 15px 30px;
+    border-radius: 5px;
+}
+
+.ll {
+width: 90%;
+margin: 0px 0 20px 60px;
+}
+
+/*Galeriecontainer ohne linken Rand*/
+.mas-gal {
+padding-left:0;
+margin-bottom:1em;
+}
+
+#linktree a {
+color:white;
 }
